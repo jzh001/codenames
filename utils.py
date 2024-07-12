@@ -17,11 +17,11 @@ def cosine_sim(word1, word2):
     return a.T @ b / (norm(a) * norm(b))
 
 def get_sorted_similarities(clue, wordlist):
-        '''Sorts words in wordlist in descending order based on cosine similarity to clue
-        Params:
-        - clue (str): clue word
-        - wordlist (list): list of words to check against clue word
-        Returns:
-        - list: sorted list of (similarity, word), from most similar to least
-        '''
-        return sorted([(cosine_sim(clue, w), w) for w in wordlist], reverse=True)
+    '''Sorts words in wordlist in descending order based on cosine similarity to clue
+    Params:
+    - clue (str): clue word
+    - wordlist (list): list of words to check against clue word
+    Returns:
+    - list: sorted list of (similarity, word), from most similar to least
+    '''
+    return sorted([(cosine_sim(clue, w), w) for w in wordlist], reverse=True)
