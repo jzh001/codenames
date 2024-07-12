@@ -47,7 +47,11 @@ Make sure you have [Conda](https://docs.conda.io/projects/conda/en/latest/user-g
 ```bash
 python run.py --power 5 --save 1 --epochs 10 --verbose 1
 ```
+
 --power: Maximum number of guesses per turn, k (default 5)
+
 --save: Save history in history.json if set to 1
+
 --epochs: Number of game iterations
+
 --verbose: 0 for less logging, 1 for more logging
