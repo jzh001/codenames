@@ -6,8 +6,6 @@ A codenames bot modelling the spymaster and operative.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
