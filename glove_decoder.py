@@ -1,6 +1,10 @@
 from utils import get_sorted_similarities
 
 class GloVeDecoder():
+
+    def __init__(self, glove):
+        self.glove = glove
+
     def decode(self, clue, number, wordlist):
         '''Decodes a clue and number
         Params:
@@ -10,4 +14,4 @@ class GloVeDecoder():
         Returns:
         - list: n most probable words, sorted from highest probability, of words in wordlist
         '''
-        return [w for _, w in get_sorted_similarities(clue, wordlist)[:number]]
+        return [w for _, w in get_sorted_similarities(clue, wordlist, self.glove)[:number]]
