@@ -53,3 +53,7 @@ python run.py --power 5 --save 1 --epochs 10 --verbose 1
 --epochs: Number of game iterations
 
 --verbose: 0 for less logging, 1 for more logging
+
+## Data
+- Codenames word data obtained from https://github.com/Gullesnuffs/Codenames/blob/master/wordlist-eng.txt
+- GloVe embedding data obtained from Gensim (Paper: Pennington, J., Socher, R., & Manning, C. (2014). Glove: Global vectors for word representation. Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP). https://doi.org/10.3115/v1/d14-1162)

@@ -25,7 +25,10 @@ class Game():
 
     
     def startGame(self):
-
+        ''' Runs one iteration of a game
+        Return:
+        - history (dict): A dictionary containing the statistics of one particular game
+        '''
         history = {
             'wordlist': list(self.wordlist),
             'mywords': list(self.mywords),
@@ -62,6 +65,12 @@ class Game():
             
 
     def guess(self, word):
+        ''' Returns whether a guess is correct or wrong.
+        Params:
+        - word: Word to guess
+        Returns:
+        - True / False: Whether guess is correct
+        '''
         print("Guess:", word)
         self.guesses.append(word)
         self.wordlist.remove(word)
@@ -78,6 +87,8 @@ class Game():
         
 
     def isGameOver(self):
+        '''Checks if game is over.
+        '''
         return len(self.mywords) == 0 or self.danger in self.guesses
 
     
