@@ -31,7 +31,7 @@ Make sure you have [Conda](https://docs.conda.io/projects/conda/en/latest/user-g
 3. Activate the newly created environment:
 
     ```bash
-    conda activate your-environment-name
+    conda activate codenames
     ```
 
 4. (Optional) If you need to update the environment with new dependencies, use:
