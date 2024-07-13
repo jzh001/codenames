@@ -46,15 +46,19 @@ Make sure you have [Conda](https://docs.conda.io/projects/conda/en/latest/user-g
 python run.py --power 5 --save 1 --epochs 10 --verbose 1
 ```
 
---power: Maximum number of guesses per turn, k (default 5)
-
 --save: Save history in history.json if set to 1 (default 1)
 
 --epochs: Number of game iterations (default 1)
 
 --verbose: 0 for less logging, 1 for more logging (default 1)
 
---candidates: Number of candidates suggested (default 10)
+--candidates: Number of candidates suggested (default 20)
+
+--negatives: Number of negatives suggested (default 20)
+
+--append: 0 for overwrite, 1 for append data (default 0)
+
+--good: Number of good words (default 9)
 
 ## Data
 - Codenames word data obtained from https://github.com/Gullesnuffs/Codenames/blob/master/wordlist-eng.txt

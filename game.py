@@ -1,7 +1,7 @@
 import random
 
 class Game():
-    def __init__(self, encoder, decoder, glove = None, n_words=25, n_good_words = 12, dictionary_path = './wordlist-eng.txt', verbose = 1):
+    def __init__(self, encoder, decoder, n_good_words, glove = None, n_words=25, dictionary_path = './wordlist-eng.txt', verbose = 1):
         # https://github.com/Gullesnuffs/Codenames/blob/master/wordlist-eng.txt
         self.dictionary = [word for word in open(dictionary_path, 'r').read().lower().split('\n') if glove == None or word in glove.key_to_index]
         self.decoder = decoder
@@ -39,7 +39,7 @@ class Game():
         while not self.isGameOver():
             self.turns += 1
            
-            clue, number = self.encoder.encode(self.mywords, self.wordlist, self.danger)
+            clue, number = self.encoder.encode(self.mywords, self.wordlist)
             if self.verbose > 0:
                 print(f"------ Turn {self.turns} ------")
                 print("Clue:", clue, number)
