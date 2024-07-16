@@ -1,6 +1,8 @@
 # Codenames
 
-A codenames bot modelling the spymaster and operative.
+A codenames bot modelling the spymaster and operative. 
+
+Article: https://towardsdatascience.com/hacking-codenames-with-glove-embeddings-0cf928af0858
 
 ## Table of Contents
 
